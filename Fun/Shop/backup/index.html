@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Candreu Shop</h1>
+    </div>
+    <table border="1">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      {% for course in courses: %}
+        <tr>
+          <td>{{course.id}}</td>
+          <td>{{course.Name}}</td>
+          <td><img src="{{course.Image}}" alt="Image for {{course.id}}" width="100px"></td>
+          <td>
+            <a href="/edit/{{course.id}}">
+              Edit name
+            </a>
+          </td>
+          <td>{{course.Price}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+    <div class="card" style="width: 18rem;">
+      <img src="https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </body>
+</html>

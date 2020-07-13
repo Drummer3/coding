@@ -1,0 +1,43 @@
+body{
+    background-color: #272727;
+    color: white;
+    margin: 0px;
+}
+
+.header-name {
+    padding-top: 0.5rem;
+    text-align: center;
+    background: #ff652f;
+    font-size: x-large;
+  }
+
+.brand{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.brand:hover{
+    color: white;
+    text-decoration-line: none;
+}
+
+.nav-item {
+    font-size: large;
+}
+
+.nav-link{
+    color: #272727;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.contact-context{
+    vertical-align: middle;
+}
+
+#addbtn:hover{
+    background: none;
+    color: white;
+}
