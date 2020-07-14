@@ -1,15 +1,7 @@
 # this is matplotlib 
 
 import matplotlib.pyplot as plt
-import numpy as np
-
-x = np.arange(0,4*np.pi-1,0.1)   # start,stop,step
-y = np.sin(x)
-z = np.cos(x)
-
-plt.plot(x,y,x,z)
-plt.xlabel('x values from 0 to 4pi')  # string must be enclosed with quotes '  '
-plt.ylabel('sin(x) and cos(x)')
-plt.title('Plot of sin and cos from 0 to 4pi')
-plt.legend(['sin(x)', 'cos(x)'])      # legend entries as seperate strings in a list
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16]) #[x1,x2,x3,x4][y1,y2,y3,y4]
+plt.xlabel('x label')
+plt.ylabel('y label')
 plt.show()
