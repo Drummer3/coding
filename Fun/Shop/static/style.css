@@ -38,6 +38,6 @@ body{
 }
 
 #addbtn:hover{
-    background: none;
+    background-color: #272727;
     color: white;
 }
