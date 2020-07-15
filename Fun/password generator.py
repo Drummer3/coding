@@ -13,6 +13,6 @@ length = int(length)
 password = ''
 for i in range(length):
     password += random.choice(chars)
-
+    
 #prints it duh
 print(password)

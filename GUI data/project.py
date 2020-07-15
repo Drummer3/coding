@@ -7,12 +7,13 @@ from PyQt5.QtWidgets import (QApplication, QWidget, QTableWidget, QTableWidgetIt
 names = ["თარიღი", "დასახელება", "რაოდენობა", "ზომის ერთეული", "ერთ.ფასი", "ჯამური ფასი"]
 x = 0
 arr = [[]]
-f = open('tmp/data.txt', encoding="utf-8")
+f = open('GUI data/data.txt', 'r', encoding="utf-8")
 for line in f:
     for word in line.split():
         arr[x].append(word)
     arr.append([])
     x += 1
+print(arr)
 sum = 0
 for i in range(len(arr)-1):
     sum += int(arr[i][5])
