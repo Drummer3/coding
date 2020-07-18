@@ -2,8 +2,8 @@
 from plyer import notification
 
 notification.notify(
-                    title='Title',
-                    message='This is message', 
+                    title='Programa',
+                    message='Wadi daidzine', 
                     app_name='Test.py', 
                     app_icon=None, 
                     timeout=10, 

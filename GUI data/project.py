@@ -1,18 +1,13 @@
 import sys
+from readdata import fillArr
 from PyQt5 import QtWidgets, QtCore, QtGui
 from PyQt5.QtCore import QDate
 from PyQt5.QtWidgets import (QApplication, QWidget, QTableWidget, QTableWidgetItem, QPushButton, QGridLayout, QGroupBox, QVBoxLayout, QLineEdit, QLabel, QComboBox, QDateEdit)
 
 
 names = ["თარიღი", "დასახელება", "რაოდენობა", "ზომის ერთეული", "ერთ.ფასი", "ჯამური ფასი"]
-x = 0
-arr = [[]]
-f = open('GUI data/data.txt', 'r', encoding="utf-8")
-for line in f:
-    for word in line.split():
-        arr[x].append(word)
-    arr.append([])
-    x += 1
+
+arr = fillArr
 print(arr)
 sum = 0
 for i in range(len(arr)-1):
@@ -105,7 +100,6 @@ class Window(QWidget):
         self.apTypeCombo = QComboBox()
         self.apTypeCombo.addItem("კგ")
         self.apTypeCombo.addItem("ცალი")
-        self.apTypeCombo.addItem("ქოთანი")
         self.apTypeCombo.addItem("გრამი")
         apGridLayout.addWidget(self.apTypeCombo, 2, 2)
         self.apOnePriceLabel = QLabel("ცალ. ფასი")
