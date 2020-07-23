@@ -18,8 +18,8 @@ def sendHealthy():
     client.send(Message(text=msgDead), thread_id=gvantsa_id)
     client.send(Message(text=msgDead), thread_id=luka_id)
 
-username = "+995591080888"
-password = "@q$FZ87Yvl"
+username = "username"
+password = "paswword"
 salome_id ='100004441952367'
 gvantsa_id = '100003324853753'
 luka_id = '100006316055945'

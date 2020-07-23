@@ -1,8 +1,8 @@
 from fbchat import Client
 from fbchat.models import Message
 
-username = "+995591080888"
-password = "@q$FZ87Yvl"
+username = "username"
+password = "password"
 client = Client(username, password)
 
 #სალომეს id
