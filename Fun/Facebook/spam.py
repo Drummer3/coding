@@ -6,8 +6,9 @@ password = "@q$FZ87Yvl"
 client = Client(username, password)
 
 #სალომეს id
-thread_id='100004441952367'
-
+salome_id ='100004441952367'
+gvantsa_id = '100003324853753'
+luka_id = '100006316055945'
 # # # # # #
 
 msg = f"ჰელოუ. რომელი საათია?"

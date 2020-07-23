@@ -16,3 +16,4 @@ for i in range(length):
     
 #prints it duh
 print(password)
+n = input("You are welcome")
