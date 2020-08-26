@@ -2,6 +2,14 @@ let $ = require('jquery')
 let fs = require('fs')
 let filename = 'contacts'
 
+$('#add-to-database').on('click', () => {
+   let date = $('#Date').val()
+   let name = $('#Name').val()
+
+   fs.appendFile('contacts', date + ',' + name + '\n')
+
+   addEntry(date, name)
+})
 
 function addEntry(date, name, quantity, from, till, price) {
    if(date && name && quantity && from && till && price) {

@@ -4,30 +4,44 @@
       <meta charset = "UTF-8">
       <title>File System</title>
       <link rel="stylesheet" href="style.css">
-      <link rel = "stylesheet" href = "./bower_components/bootstrap/dist/css/bootstrap.min.css" />
-      <style type = "text/css">
-         #contact-list {
-            height: 150px;
-            overflow-y: auto;
-         }
-      </style>
+      <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
    </head>
    
    <body>
       <div class = "container">
-         
-         
-         <div class = "contact-list">
-            <table class = "table-striped" id = "contact-table">
-               <tr>
-                  <th class = "col-xs-2">S. No.</th>
-                  <th class = "col-xs-4">Name</th>
-                  <th class = "col-xs-6">Email</th>
-               </tr>
-            </table>
+         <center style="margin-bottom: 3rem;"><a href="index.html" class="home">Pineapple Studio</a></center>
+
+         <div class = "form-group">
+            <label for = "Date">თარიღი</label>
+            <input type = "date" name = "Date" id = "Date" class = "form-control" required>
          </div>
-         
-         <script src = "./view.js" ></script>
+         <div class = "form-group">
+            <label for = "Name">სახელი</label>
+            <input type = "text" name = "Name" id = "Name" class = "form-control" required>
+         </div>
+         <div class = "form-group">
+            <label for = "Quantity">რაოდენობა</label>
+            <input type="number" name = "Quantity" id = "Quantity" class = "form-control" required>
+         </div>
+         <div class = "form-group">
+            <label for = "From">დან-</label>
+            <input type = "time" name = "From" id = "From" class = "form-control" required>
+         </div>
+         <div class = "form-group">
+            <label for = "Till">-მდე</label>
+            <input type = "time" name = "Till" id = "Till" class = "form-control" required>
+         </div>
+         <div class = "form-group">
+            <label for = "Price">ფასი</label>
+            <input type = "number" name = "Price" id = "Price" class = "form-control" required>
+         </div>
       </div>
+      <div class="footer">
+         <footer>
+            <center style="margin-top: 2rem;"><a href="index.html" class="add-to-database">რეპეტიციის დამახსოვრება</a></center>
+         </footer>
+      </div>
+      <script src = "./view.js" ></script>
+      <script src="./sorttable.js"></script>
    </body>
 </html>
