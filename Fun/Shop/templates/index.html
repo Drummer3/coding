@@ -5,31 +5,18 @@
     <link rel="stylesheet" href="static/style.css">
   </head>
   <body>
-    <div class="header-name">
-      <a class="brand" href="/">კანდრეუ</a>
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="/cart">კალათა</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about-us">ჩვენს შესახებ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contacts">კონტაქტი</a>
-        </li>
-      </ul>
-    </div>
-    <div class="row row-cols-1 row-cols-md-4" style="margin: auto; margin-top: 1rem; width: 80%;">
+    <header>
+
+    </header>
+    <div class="parent">
     {% for course in courses: %}
-    <div class="col mb-4">
-    <div class="card h-100" style="width: 15rem; background-color: #ff652f;" >
-      <img src="{{course.Image}}" class="card-img-top">
-      <div class="card-body center">
-        <h5 class="card-title">{{course.Name}}</h5>
-        <p class="card-text">{{course.Price}} ₾</p>
-        <a type="button" class="btn btn-light" id="addbtn" href="/add-cart">კალათაში დამატება</a>
+    <div class="child">
+      <img src="{{course.Image}}">
+      <div>
+        <h5 class="item-name">{{course.Name}}</h5>
+        <p class="item-price">{{course.Price}} ₾</p>
+        <a type="button" class="cart-button" id="addbtn" href="/add-cart">კალათაში დამატება</a>
       </div>
-    </div>
     </div>
     {% endfor %}
   </div>

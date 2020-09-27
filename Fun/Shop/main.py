@@ -22,7 +22,7 @@ def cart_page():
 
 @app.route('/add-cart')
 def add_cart():
-  print('Here must be database id')
+  print('Here must be item name')
   return render_template('index.html')
 
 @app.route('/about-us')
