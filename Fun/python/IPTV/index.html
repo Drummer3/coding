@@ -1,0 +1,27 @@
+<html>
+  <body style="margin: 0;">
+	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <video id="video" style="width: 50%;" controls></video>
+    <script>
+    if(Hls.isSupported())
+    {
+        var video = document.getElementById('video');
+        var hls = new Hls();
+        hls.loadSource('https://tv.cdn.xsg.ge/gpb-1tv/tracks-v1a1/index.m3u8');
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED,function()
+        {
+            video.play();
+        });
+    }
+    else if (video.canPlayType('application/vnd.apple.mpegurl'))
+    {
+        video.src = 'playlist.m3u8';
+        video.addEventListener('canplay',function()
+        {
+            video.play();
+        });
+    }
+    </script>
+  </body>
+</html>
